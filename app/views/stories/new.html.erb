@@ -1,0 +1,14 @@
+
+<div class="jumbotron row">
+  <h1 class="col-xs-12 col-sm-8 col-sm-offset-2">Write a story</h1>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+<%= bootstrap_form_for :story, url: stories_path do |f| %>
+    <%= f.text_area :title, hide_label: true, placeholder: "Give your story a title", :class => "story-title" %>
+    <%= f.text_field :author, hide_label: true, placeholder: "Write your name", :class => "story-author" %>
+  </br>
+   <%= f.submit "Start your story", class: "btn btn-default btn-lg start-story"%>
+<% end %>
+</div>
+

@@ -1,0 +1,18 @@
+<p>Add your sentence and pass the story on to a friend</p> 
+<%= form_for :post, url: posts_path do |f| %>
+  <title>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </title>
+ 
+  <p>
+    <%= f.label :sentence %><br>
+    <%= f.text_area :sentence %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Add to the story"%>
+  </p>
+
+
+<% end %>

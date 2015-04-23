@@ -1,0 +1,38 @@
+<div class="jumbotron row">
+  <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+ <h1><%= @story.title.titleize %></h1>
+ <h2> <small><i>by</i></small> <%= @story.author.titleize %></h2>
+  </br>
+<h3>Write your sentence below then <a class="email" title="Email a friend" href="#" onclick="javascript:window.location='mailto:?&body= ' + window.location;"></br>Invite a friend to carry it on.</a></h3>
+</div>
+</div>
+
+
+
+
+
+<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+
+  <% @story.posts.each do |post| %>
+  <h3>
+    <small><%= post.name.titleize %></small>
+    <%= post.sentence.capitalize %>
+  </h3>
+<% end %>
+</br>
+  <%= bootstrap_form_for([@story, @story.posts.build]) do |f| %>
+    <p>
+      <%= f.text_area :sentence, hide_label: true, placeholder: "What happens next in the story?", :class => "story-title" %>
+    </p>
+    <p>
+      <%= f.text_field :name, hide_label: true, placeholder: "Sign your name", :class => "story-author"%>
+    </p>
+  </br>
+      <%= f.submit "Add Your Sentence", class: "btn btn-default btn-lg start-story" %>
+  <% end %>
+</br>
+</br> 
+
+
+
+</div>

@@ -1,0 +1,65 @@
+$jumbotron-bg: #ffffff;
+$body-bg: #E5E5E5;
+$input-bg: #ffffff;
+$border-radius-base: 0px;
+$btn-default-bg: #ffffff;
+$btn-default-border: #ffffff;
+$input-border:#ECECEC;
+$list-group-hover-bg: #22313F;
+
+
+
+
+/*
+ *= require rails_bootstrap_forms
+ */
+
+@import "bootstrap";
+
+a {
+  color: #EF4836;
+}
+
+a:hover {
+    color: #EF4836;
+}
+
+body {
+	color: #22313F;
+	font-family: 'Amiri', serif;
+}
+
+.form-container {
+	padding-left: 30px;
+	padding-top: 8px;
+}
+
+.form-group .story-title {
+	font-size: 18px;
+	height: 90px;
+	font-family: 'Source Code Pro' ;
+}
+
+input.story-author {
+	font-size: 18px;
+	height: 45px;
+	font-family: 'Source Code Pro' ;
+}
+
+.jumbotron{
+
+}
+
+input.start-story:hover {
+	background: #ffffff;
+	color: #EF4836;
+}
+
+
+input.start-story {
+	color: #EF4836;
+	font-weight: bold;
+}
+
+
+
