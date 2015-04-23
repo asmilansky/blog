@@ -11,6 +11,8 @@ gem 'turbolinks'
 gem 'bootstrap-sass' 
 gem 'autoprefixer-rails'
 gem 'bootstrap_form'
+gem 'pg'
+gem 'taps'
 
 group :test do
   gem 'shoulda'
